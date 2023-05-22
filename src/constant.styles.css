@@ -1,3 +1,10 @@
 :root {
     --dark-border: 1px solid #202c33;
+
+    /*colors*/
+    --white-color: #e9edef;
+    --main-dark-color: #111B21;
+    --middle-dark-color: #202c33;
+    --bright-dark-color: #2a3942;
+    --accent-color: #276233;
 }
