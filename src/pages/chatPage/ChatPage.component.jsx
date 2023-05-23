@@ -19,7 +19,7 @@ const ChatPage = ({activeChatId, chatList, currentSearchTxt, updateContactSearch
 
     useEffect(() => {
 
-    },[chatList])
+    },[activeChatId, chatList])
 
     return(
         <ChatPageContainer>

@@ -9,13 +9,12 @@ import Popup from "./components/popup/Popup.component";
 import CustomInput from "./components/customInput/CustomInput.component";
 
 function App({isLoggedIn, loggingInHandler, ID_INSTANCE, API_TOKEN, receiveNotification, updateCurrentIdInstance, updateCurrentAPIToken}) {
-    receiveNotification(ID_INSTANCE, API_TOKEN)
 
     useEffect(() => {
         setInterval(() => {
             receiveNotification(ID_INSTANCE, API_TOKEN)
         }, 7000)
-    })
+    },[])
 
     const handleChangeIdInstance = (event) => {
         updateCurrentIdInstance(event.target.value)

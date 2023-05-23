@@ -16,6 +16,9 @@ const INITIAL_STATE = {
 const chatsReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case chatActionTypes.LOGGING_IN_START:
+        
+            window.location.reload(true);
+
             return {
                 ...state,
                 isLoggedIn: true
